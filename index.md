@@ -6,6 +6,13 @@ layout: index
 This page describe the specs of yaml frontmatter for csv file format.
 The main goals of the format are extreme simplicity and readability 
 
+Because for data human's curators from no-data, CSV, CSV+metadata to Semi-structured data, the technological gap is too large. A simple file format to add metadata to the existing datasets is needed, json is very cryptic for humans, but yaml can do the job.
+
+For backward compatibility you can always add to your [dataset.csv](https://github.com/jrovegno/csvy/blob/master/data.csv) a [dataset.yml](https://raw.githubusercontent.com/jrovegno/csvy/master/data.yml) metadata file, the next step when there is proper implementation make a single file [dataset.csvy](https://raw.githubusercontent.com/jrovegno/csvy/master/data.csvy) will not be a problem at all.
+
+There are many initiatives which it plans to use json + csv, but most are not meant to be published and read by humans.
+
+
 ### Authors and Contributors
 
 
