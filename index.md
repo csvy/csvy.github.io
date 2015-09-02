@@ -13,14 +13,12 @@ The main goals of the format are extreme simplicity and readability
 
 ### References
 
-- http://www.w3.org/TR/tabular-data-model/
-- http://jekyllrb.com/docs/frontmatter/
-- http://dataprotocols.org/json-table-schema/
-- http://dataprotocols.org/data-packages/
-- http://data.okfn.org/standards
-- http://data.okfn.org/doc/tabular-data-package
-- http://data.okfn.org/tools/create
-- http://codebeautify.org/json-to-yaml
-- http://jrovegno.github.io/csvy/
-- http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator
-- http://nilm-metadata.readthedocs.org/en/latest/central_metadata.html
+- [http://www.w3.org/TR/tabular-data-model/](http://www.w3.org/TR/tabular-data-model/)
+- [http://jekyllrb.com/docs/frontmatter/](http://jekyllrb.com/docs/frontmatter/)
+- [http://dataprotocols.org/json-table-schema/](http://dataprotocols.org/json-table-schema/)
+- [http://dataprotocols.org/data-packages/](http://dataprotocols.org/data-packages/)
+- [http://data.okfn.org/standards](http://data.okfn.org/standards)
+- [http://data.okfn.org/doc/tabular-data-package](http://data.okfn.org/doc/tabular-data-package)
+- [http://data.okfn.org/tools/create](http://data.okfn.org/tools/create)
+- [http://codebeautify.org/json-to-yaml](http://codebeautify.org/json-to-yaml)
+- [http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator](http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator)
