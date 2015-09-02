@@ -13,6 +13,7 @@ The main goals of the format are extreme simplicity and readability
 
 ### References
 
+- [RFC4180](https://tools.ietf.org/html/rfc4180)
 - [http://www.w3.org/TR/tabular-data-model/](http://www.w3.org/TR/tabular-data-model/)
 - [http://jekyllrb.com/docs/frontmatter/](http://jekyllrb.com/docs/frontmatter/)
 - [http://dataprotocols.org/json-table-schema/](http://dataprotocols.org/json-table-schema/)
