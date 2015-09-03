@@ -1,4 +1,3 @@
-markdown: redcarpet
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: pygments
 
