@@ -15,8 +15,12 @@ There are many initiatives which it plans to use json + csv, but most are not me
 
 ### Authors and Contributors
 
+- [Javier Rovegno](https://github.com/jrovegno)
+- [Martin Fenner](https://github.com/mfenner)
 
 ### Support or Contact
+
+Use [Github Issues](https://github.com/csvy/csvy.github.io/issues).
 
 ### References
 
