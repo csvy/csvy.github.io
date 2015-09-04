@@ -1,0 +1,18 @@
+---
+title: Cushing, OK WTI Spot Price FOB
+filename: data.csv
+fileurl: https://raw.githubusercontent.com/jrovegno/csvy/master/data.csv
+sourceurl: http://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RWTC&f=D
+item: PET
+sourcekey: RWTC
+freq: Daily
+rate: MID
+type: price
+units: Dollars per Barrel
+latestdate: 2015-08-31
+releasedate: 2015-09-02
+nextreleasedate: 2015-09-10
+source: Thomson Reuters
+contactemail: infoctr@eia.doe.gov
+contactphone: (202) 586-8800
+---
