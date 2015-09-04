@@ -14,7 +14,7 @@ There are many initiatives which it plans to use json + csv, but most are not me
 
 ### Backwards Compatibility
 
-Parser support for skipping lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by @hubgit.
+Parser support for skipping lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by [@hubgit](https://github.com/hubgit).
 
 Language  | Parser     | Skip lines | Comment lines | Comments
 ----------| -----------| ---------- | ------------- | --------
