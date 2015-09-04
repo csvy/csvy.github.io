@@ -19,6 +19,7 @@ Parser support for skipping lines in the header (which would contain the YAML), 
 Language  | Parser     | Skip lines | Comment lines | Comments
 ----------| -----------| ---------- | ------------- | --------
 Excel Mac |            | yes        | no            |
+Python    | pandas     | yes        | yes           |
 R         | read.table | yes        | yes           |
 Ruby      | csv.read   | no         | yes           | skip lines via regex
 
