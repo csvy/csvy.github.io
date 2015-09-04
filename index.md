@@ -12,6 +12,23 @@ For backward compatibility you can always add to your [data.csv](https://raw.git
 
 There are many initiatives which it plans to use json + csv, but most are not meant to be published and read by humans.
 
+### Defining table columns
+
+Use the [JSON Table Schema](http://dataprotocols.org/json-table-schema/):
+
+```
+---
+name: my-dataset
+fields:
+  - name: var1
+    type: string
+  - name: var2
+    type: integer
+  - name: var3
+    type: number
+---
+```
+
 ### Backwards Compatibility
 
 Parser support for skipping multiple lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by [@hubgit](https://github.com/hubgit).
@@ -26,6 +43,7 @@ Ruby      | csv.read   | no         | yes           | skip lines via regex
 ### Related Projects
 
 - [CSVW](http://www.w3.org/2013/csvw/wiki/Main_Page) (CSV on the Web)
+- [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package)
 - [ARFF](https://weka.wikispaces.com/ARFF+(stable+version)) (Attribute-Relation File Format)
 
 ### Authors and Contributors
