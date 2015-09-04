@@ -12,6 +12,16 @@ For backward compatibility you can always add to your [data.csv](https://raw.git
 
 There are many initiatives which it plans to use json + csv, but most are not meant to be published and read by humans.
 
+### Backwards Compatibility
+
+Parser support for skipping lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by @hubgit.
+
+Language  | Parser     | Skip lines | Comment lines | Comments
+----------| -----------| ---------- | ------------- | --------
+Excel Mac |            | yes        | no            |
+R         | read.table | yes        | yes           |
+Ruby      | csv.read   | no         | yes           | skip lines via regex
+
 
 ### Authors and Contributors
 
