@@ -22,6 +22,10 @@ Excel Mac |            | yes        | no            |
 R         | read.table | yes        | yes           |
 Ruby      | csv.read   | no         | yes           | skip lines via regex
 
+### Related Projects
+
+- [CSVW](http://www.w3.org/2013/csvw/wiki/Main_Page) (CSV on the Web)
+- [ARFF](https://weka.wikispaces.com/ARFF+(stable+version)) (Attribute-Relation File Format)
 
 ### Authors and Contributors
 
