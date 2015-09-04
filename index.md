@@ -16,19 +16,16 @@ There are many initiatives which it plans to use json + csv, but most are not me
 
 Use the [JSON Table Schema](http://dataprotocols.org/json-table-schema/):
 
-
-```
----
-name: my-dataset
-fields:
-  - name: var1
-    type: string
-  - name: var2
-    type: integer
-  - name: var3
-    type: number
----
-```
+    ---
+    name: my-dataset
+    fields:
+      - name: var1
+        type: string
+      - name: var2
+        type: integer
+      - name: var3
+        type: number
+    ---
 
 ### Backwards Compatibility
 
