@@ -38,3 +38,4 @@ Use [Github Issues](https://github.com/csvy/csvy.github.io/issues).
 - [http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator](http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator)
 - [Add YAML front matter block support for pandas.io.parsers.read_csv](https://github.com/pydata/pandas/issues/9613)
 - [Allow custom metadata to be attached to panel/df/series](https://github.com/pydata/pandas/issues/2485)
+- [Using YAML frontmatter with CSV](http://blog.datacite.org/using-yaml-frontmatter-with-csv/)
