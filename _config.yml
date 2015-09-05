@@ -4,7 +4,7 @@ highlighter: pygments
 title : CSVY yaml frontmatter for csv file format
 tagline: datasets,csv,yml,
 author :
-  name : Name Lastname
+  name : CSVY's Team
   email : blah@email.test
-  github : jrovegno
+  github : csvy
   twitter : jrovegno
