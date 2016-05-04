@@ -36,6 +36,10 @@ Use the [JSON Table Schema](http://dataprotocols.org/json-table-schema/):
     A,1,2.5
     B,3,4.3
 
+### Libraries supporting CSVY
+
+* [rio](https://cran.r-project.org/web/packages/rio/index.html) (R), Using the `read.csv` command.
+
 ### Backwards Compatibility
 
 Parser support for skipping multiple lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by [@hubgit](https://github.com/hubgit).
