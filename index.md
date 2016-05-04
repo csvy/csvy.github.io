@@ -44,12 +44,12 @@ Use the [JSON Table Schema](http://dataprotocols.org/json-table-schema/):
 
 Parser support for skipping multiple lines in the header (which would contain the YAML), and for comment lines (lines starting with `#`). Based on [CSV Parser Notes](https://github.com/hubgit/csvw/wiki/CSV-Parser-Notes) by [@hubgit](https://github.com/hubgit).
 
-Language  | Parser     | Skip lines | Comment lines | Comments
-----------| -----------| ---------- | ------------- | --------
-Excel Mac |            | yes        | no            |
-Python    | pandas     | yes        | yes           |
-R         | read.table | yes        | yes           |
-Ruby      | csv.read   | no         | yes           | skip lines via regex
+Language  | Parser          | Skip lines | Comment lines | Comments
+----------| --------------- | ---------- | ------------- | --------
+Excel Mac |                 | yes        | no            |
+Python    | pandas.read_csv | yes        | yes           |
+R         | read.table      | yes        | yes           |
+Ruby      | csv.read        | no         | yes           | skip lines via regex
 
 ### Related Projects
 
