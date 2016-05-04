@@ -1,5 +1,5 @@
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
 
 title : CSVY yaml frontmatter for csv file format
 tagline: datasets,csv,yml,
