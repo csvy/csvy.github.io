@@ -12,6 +12,9 @@ For backward compatibility you can always add to your [data.csv](https://raw.git
 
 There are many initiatives which it plans to use json + csv, but most are not meant to be published and read by humans.
 
+### YAML Header
+A YAML metadata block is a valid YAML object, delimited by a line of three hyphens `---` at the top and a line of three hyphens `---` or three dots `...` at the bottom.
+
 ### Defining table columns
 
 Use the [JSON Table Schema](http://dataprotocols.org/json-table-schema/):
