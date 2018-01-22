@@ -10,14 +10,14 @@ Because for data human's curators from no-data, CSV, metadata+CSV to Semi-struct
 ## Based on Tabular Data Packages
 There are important initiatives, like [Tabular Data Packages](http://frictionlessdata.io/guides/tabular-data-package/) which it plans to use (json + csv), but most are meant to be published and read by machines.
 
-CSVY is a simple container of a Tabular Data Package, where the (Metadata+Schema) are translated from JSON to YAML and put in the YAML frontmatter part of the file, after the YAML frontmatter part is the Data part stored using the CSV Dialect Description Format. It's possible put multiple Data resources separates by the YAML Header delimiter.
+_CSVY is a simple container of a Tabular Data Package_, where the (Metadata+Schema) are translated from JSON to YAML and put in the YAML frontmatter part of the file, after the YAML frontmatter part is the Data part stored using the [CSV Dialect](http://frictionlessdata.io/specs/csv-dialect/) Description Format. It's possible put multiple Data resources separates by the YAML Header delimiter.
 
 ### YAML Header delimiter
 A YAML metadata block is a valid YAML object, delimited by a line of three hyphens `---` at the top and a line of three hyphens `---` or three dots `...` at the bottom.
 
 ### Defining the Table Schema
 Use the [Table Schema](https://specs.frictionlessdata.io/table-schema/), the only difference with the [Tabular Data Package Specifications](https://specs.frictionlessdata.io/tabular-data-package/), it's change the `path` field by `order` (started by one) to support multiple Data resources.
-```
+```yaml
 ---
 name: my-dataset
 resources:
@@ -30,6 +30,14 @@ resources:
       type: integer
     - name: var3
       type: number
+  dialect:
+    csvddfVersion: 1.0
+    delimiter: ","
+    doubleQuote: false
+    lineTerminator: "\r\n"
+    quoteChar: "\""
+    skipInitialSpace: true
+    header: true
 ---
 var1,var2,var3
 A,1,2.0
