@@ -1,2 +1,3 @@
-# README
-CSVY yaml frontmatter for csv file format
+# csvy.org
+
+This repo contains the content for [content](index.md) for <http://csvy.org>. 
