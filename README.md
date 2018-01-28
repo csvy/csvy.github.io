@@ -1,3 +1,3 @@
 # csvy.org
 
-This repo contains the content for [content](index.md) for <http://csvy.org>. 
+This repo contains the specs of yaml frontmatter for csv file format on <http://csvy.org>.
