@@ -71,10 +71,6 @@ Ruby      | csv.read        | no         | yes           | skip lines via regex
 - [Javier Rovegno](https://github.com/jrovegno)
 - [Martin Fenner](https://github.com/mfenner)
 
-### CSVY and CSVY website content licence
-
-The CSVY specification and all the content on this site can be freely reused under the terms of the [Creative Commons Attribution 4.0 International License (CC-BY)](https://creativecommons.org/licenses/by/4.0/).
-
 ### Support or Contact
 
 Use [Github Issues](https://github.com/csvy/csvy.github.io/issues).
