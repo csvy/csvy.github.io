@@ -7,37 +7,50 @@ The main goals of the format are extreme simplicity and readability.
 
 Because for data human's curators from no-data, CSV, metadata+CSV to Semi-structured data, the technological gap is too large. A simple file format to add metadata to the existing datasets is needed, json is very cryptic for humans, but yaml can do the job.
 
-## Based on Tabular Data Packages
-There are important initiatives, like [Tabular Data Packages](http://frictionlessdata.io/guides/tabular-data-package/) which it plans to use (json + csv), but most are meant to be published and read by machines.
+## Based on Tabular Data Resource
+There are important initiatives, like [Tabular Data Resource](http://frictionlessdata.io/specs/tabular-data-resource/) which it plans to use (json + csv), but most are meant to be published and read by machines.
 
-_CSVY is a simple container of a Tabular Data Package_, where the (Metadata+Schema) are translated from JSON to YAML and put in the YAML frontmatter part of the file, after the YAML frontmatter part is the Data part stored using the [CSV Dialect](http://frictionlessdata.io/specs/csv-dialect/) Description Format. It's possible put multiple Data resources separates by the YAML Header delimiter.
+_CSVY is a simple container of a Tabular Data Resource_, where the (Metadata+Schema) are translated from JSON to YAML and put in the YAML frontmatter part of the file, after the YAML frontmatter part is the Data part stored using the [CSV Dialect](http://frictionlessdata.io/specs/csv-dialect/) Description Format.
 
 ### YAML Header delimiter
 A YAML metadata block is a valid YAML object, delimited by a line of three hyphens `---` at the top and a line of three hyphens `---` or three dots `...` at the bottom.
 
 ### Defining the Table Schema
-Use the [Table Schema](https://specs.frictionlessdata.io/table-schema/), the only difference with the [Tabular Data Package Specifications](https://specs.frictionlessdata.io/tabular-data-package/), it's change the `path` field by `order` (started by one) to support multiple Data resources.
+Use the [Table Schema](https://specs.frictionlessdata.io/table-schema/), it's important to know that the CSVY format is designed to store only one dataset per file.
 ```yaml
 ---
+profile: tabular-data-resource
 name: my-dataset
-resources:
-- order: 1
-  schema:
-    fields:
-    - name: var1
-      type: string
-    - name: var2
-      type: integer
-    - name: var3
-      type: number
-  dialect:
-    csvddfVersion: 1.0
-    delimiter: ","
-    doubleQuote: false
-    lineTerminator: "\r\n"
-    quoteChar: "\""
-    skipInitialSpace: true
-    header: true
+path: https://raw.githubusercontent.com/csvy/csvy.github.io/master/examples/example.csvy
+title: Example file of csvy 
+description: Show a csvy sample file.
+format: csvy
+mediatype: text/vnd.yaml
+encoding: utf-8
+schema:
+  fields:
+  - name: var1
+    type: string
+  - name: var2
+    type: integer
+  - name: var3
+    type: number
+dialect:
+  csvddfVersion: 1.0
+  delimiter: ","
+  doubleQuote: false
+  lineTerminator: "\r\n"
+  quoteChar: "\""
+  skipInitialSpace: true
+  header: true
+sources:
+- title: The csvy specifications
+  path: http://csvy.org/
+  email: ''
+licenses:
+- name: CC-BY-4.0
+  title: Creative Commons Attribution 4.0
+  path: https://creativecommons.org/licenses/by/4.0/
 ---
 var1,var2,var3
 A,1,2.0
