@@ -58,7 +58,7 @@ B,3,4.3
 ```
 ### Libraries supporting CSVY
 
-* R: [csvy](https://cran.r-project.org/package=csvy) using `read_csvy()` and `write_csvy()
+* R: [csvy](https://cran.r-project.org/package=csvy) using `read_csvy()` and `write_csvy()`
 * R: [rio](https://cran.r-project.org/package=rio) using `import()` and `export()` (supported provided by the csvy package)
 
 ### Backwards Compatibility
