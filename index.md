@@ -5,7 +5,7 @@ layout: index
 This page describe the specs of yaml frontmatter for csv file format.
 The main goals of the format are extreme simplicity and readability.
 
-Because for data human's curators from no-data, CSV, metadata+CSV to Semi-structured data, the technological gap is too large. A simple file format to add metadata to the existing datasets is needed, json is very cryptic for humans, but yaml can do the job.
+Because for data human's curators from no-data, CSV, metadata+CSV to Semi-structured data, the technological gap is too large. A simple file format to add metadata to the existing datasets is needed. [JSON](https://en.wikipedia.org/wiki/JSON) is very cryptic for humans, but [YAML](https://en.wikipedia.org/wiki/YAML) can do the job as it can be easily read both by humans and softwares.
 
 ## Based on Tabular Data Resource
 There are important initiatives, like [Tabular Data Resource](http://frictionlessdata.io/specs/tabular-data-resource/) which it plans to use (json + csv), but most are meant to be published and read by machines.
