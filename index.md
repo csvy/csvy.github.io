@@ -17,6 +17,7 @@ A YAML metadata block is a valid YAML object, delimited by a line of three hyphe
 
 ### Defining the Table Schema
 Use the [Table Schema](https://specs.frictionlessdata.io/table-schema/), it's important to know that the CSVY format is designed to store only one dataset per file.
+
 ```yaml
 ---
 profile: tabular-data-resource
@@ -56,10 +57,12 @@ var1,var2,var3
 A,1,2.0
 B,3,4.3
 ```
+
 ### Libraries supporting CSVY
 
 * R: [csvy](https://cran.r-project.org/package=csvy) using `read_csvy()` and `write_csvy()`
 * R: [rio](https://cran.r-project.org/package=rio) using `import()` and `export()` (supported provided by the csvy package)
+* Ruby: [csvreader](https://github.com/csvreader/csvreader) using `Csv.parser.meta` to get the parsed meta data block hash (or nil) if none.
 
 ### Backwards Compatibility
 
@@ -76,14 +79,14 @@ Ruby      | csv.read        | no         | yes           | skip lines via regex
 
 ### Related Projects
 
-- [CSVW](http://www.w3.org/2013/csvw/wiki/Main_Page) (CSV on the Web)
-- [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package)
-- [ARFF](https://weka.wikispaces.com/ARFF+(stable+version)) (Attribute-Relation File Format)
+* [CSVW](http://www.w3.org/2013/csvw/wiki/Main_Page) (CSV on the Web)
+* [Tabular Data Package](http://data.okfn.org/doc/tabular-data-package)
+* [ARFF](https://weka.wikispaces.com/ARFF+(stable+version)) (Attribute-Relation File Format)
 
 ### Authors and Contributors
 
-- [Javier Rovegno](https://github.com/jrovegno)
-- [Martin Fenner](https://github.com/mfenner)
+* [Javier Rovegno](https://github.com/jrovegno)
+* [Martin Fenner](https://github.com/mfenner)
 
 ### Support or Contact
 
@@ -91,17 +94,17 @@ Use [Github Issues](https://github.com/csvy/csvy.github.io/issues).
 
 ### References
 
-- [RFC documents the format used for Comma-Separated Values (CSV) RFC4180](https://tools.ietf.org/html/rfc4180)
-- [Model for Tabular Data and Metadata on the Web](http://www.w3.org/TR/tabular-data-model/)
-- [Front Matter](http://jekyllrb.com/docs/frontmatter/)
-- [Data Package](http://frictionlessdata.io/data-packages/)
-- [Tabular Data Packages](http://frictionlessdata.io/guides/tabular-data-package/)
-- [Table Schema](https://specs.frictionlessdata.io/table-schema/)
-- [Okfn Tools](http://frictionlessdata.io/tools/)
-- [Json to Yaml converter](https://www.json2yaml.com/)
-- [Codebeautify yaml  to (json/xml/csv)](http://codebeautify.org/yaml-to-json-xml-csv)
-- [Is there a yaml front matter standard validator?](http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator)
-- [Add YAML front matter block support for pandas.io.parsers.read_csv](https://github.com/pydata/pandas/issues/9613)
-- [Allow custom metadata to be attached to panel/df/series](https://github.com/pydata/pandas/issues/2485)
-- [Using YAML frontmatter with CSV](http://blog.datacite.org/using-yaml-frontmatter-with-csv/)
-- [Pandoc Yaml Metadata Block](http://pandoc.org/MANUAL.html#extension-yaml_metadata_block)
+* [RFC documents the format used for Comma-Separated Values (CSV) RFC4180](https://tools.ietf.org/html/rfc4180)
+* [Model for Tabular Data and Metadata on the Web](http://www.w3.org/TR/tabular-data-model/)
+* [Front Matter](http://jekyllrb.com/docs/frontmatter/)
+* [Data Package](http://frictionlessdata.io/data-packages/)
+* [Tabular Data Packages](http://frictionlessdata.io/guides/tabular-data-package/)
+* [Table Schema](https://specs.frictionlessdata.io/table-schema/)
+* [Okfn Tools](http://frictionlessdata.io/tools/)
+* [Json to Yaml converter](https://www.json2yaml.com/)
+* [Codebeautify yaml  to (json/xml/csv)](http://codebeautify.org/yaml-to-json-xml-csv)
+* [Is there a yaml front matter standard validator?](http://stackoverflow.com/questions/27838730/is-there-a-yaml-front-matter-standard-validator)
+* [Add YAML front matter block support for pandas.io.parsers.read_csv](https://github.com/pydata/pandas/issues/9613)
+* [Allow custom metadata to be attached to panel/df/series](https://github.com/pydata/pandas/issues/2485)
+* [Using YAML frontmatter with CSV](http://blog.datacite.org/using-yaml-frontmatter-with-csv/)
+* [Pandoc Yaml Metadata Block](http://pandoc.org/MANUAL.html#extension-yaml_metadata_block)
